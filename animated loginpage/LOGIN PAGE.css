@@ -1,0 +1,177 @@
+Body {
+    Margin: 0;
+    Color: #b4bbe9;
+    Background: #a1e1ec;
+    Font: 600 16px/18px "Open Sans", Sans-Serif;
+  
+  }
+  *,
+  :After,
+  :Before {
+    Box-Sizing: Border-Box;
+  }
+  .Clearfix:after,
+  .Clearfix:before {
+    Content: "";
+    Display: Table;
+  }
+  .Clearfix:after {
+    Clear: Both;
+    Display: Block;
+  }
+  A {
+    Color: Inherit;
+    Text-Decoration: None;
+  }
+  
+  .Login-Wrap {
+    Width: 100%;
+    Margin: Auto;
+    Max-Width: 525px;
+    Min-Height: 670px;
+    Position: Relative;
+    Box-Shadow: 0 12px 15px 0 Rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 Rgba(0, 0, 0, 0.19);
+  }
+  .Login-Html {
+    Width: 100%;
+    Height: 100%;
+    Position: Absolute;
+    Padding: 90px 70px 50px 70px;
+    Background: rgb(178, 214, 247);
+  }
+  .Login-Html .Sign-In-Htm,
+  .Login-Html .Sign-Up-Htm {
+    Top: 0;
+    Left: 0;
+    Right: 0;
+    Bottom: 0;
+    Position: Absolute;
+    Transform: RotateY(180deg);
+    Backface-Visibility: Hidden;
+    Transition: All 0.4s Linear;
+  }
+  .Login-Html .Sign-In,
+  .Login-Html .Sign-Up,
+  .Login-Form .Group .Check {
+    Display: None;
+  }
+  .Login-Html .Tab,
+  .Login-Form .Group .Label,
+  .Login-Form .Group .Button {
+    Text-Transform: Uppercase;
+  }
+  .Login-Html .Tab {
+    Font-Size: 22px;
+    Margin-Right: 15px;
+    Cursor: Pointer;
+    Padding-Bottom: 5px;
+    Margin: 0 15px 10px 0;
+    Display: Inline-Block;
+    Border-Bottom: 2px Solid Transparent;
+  }
+  .Login-Html .Sign-In:checked + .Tab,
+  .Login-Html .Sign-Up:checked + .Tab {
+    Color: rgb(73, 71, 71);
+    Border-Color: #11c2ee;
+    Cursor: Pointer;
+  }
+  .Login-Form {
+    Min-Height: 345px;
+    Position: Relative;
+    Perspective: 1000px;
+    Transform-Style: Preserve-3d;
+  }
+  .Login-Form .Group {
+    Margin-Bottom: 15px;
+  }
+  .Login-Form .Group .Label,
+  .Login-Form .Group .Input,
+  .Login-Form .Group .Button {
+    Width: 100%;
+    Color: rgb(58, 56, 56);
+    Display: Block;
+  }
+  .Login-Form .Group .Input,
+  .Login-Form .Group .Button {
+    Border: None;
+    Padding: 15px 20px;
+    Border-Radius: 25px;
+    Background: Rgba(255, 255, 255, 0.1);
+  }
+  .Login-Form .Group Input[Data-Type="Password"] {
+    -Webkit-Text-Security: Circle;
+  }
+  .Login-Form .Group .Label {
+    Color: rgb(39, 37, 37);
+    Font-Size: 12px;
+  }
+  .Login-Form .Group .Button {
+    Background: #1161ee;
+    Cursor: Pointer;
+  }
+  .Login-Form .Group .Button:hover {
+      Background:#1454c4;
+      Cursor: Pointer;
+    }
+  .Login-Form .Group Label .Icon {
+    Width: 15px;
+    Height: 15px;
+    Border-Radius: 2px;
+    Position: Relative;
+    Display: Inline-Block;
+    Background: Rgba(255, 255, 255, 0.1);
+  }
+  .Login-Form .Group Label .Icon:before,
+  .Login-Form .Group Label .Icon:after {
+    Content: "";
+    Width: 10px;
+    Height: 2px;
+    Background: rgb(36, 35, 35);
+    Position: Absolute;
+    Transition: All 0.2s Ease-In-Out 0s;
+  }
+  .Login-Form .Group Label .Icon:before {
+    Left: 3px;
+    Width: 5px;
+    Bottom: 6px;
+    Transform: Scale(0) Rotate(0);
+  }
+  .Login-Form .Group Label .Icon:after {
+    Top: 6px;
+    Right: 0;
+    Transform: Scale(0) Rotate(0);
+  }
+  .Login-Form .Group .Check:checked + Label {
+    Color: rgb(61, 60, 60);
+  }
+  .Login-Form .Group .Check:checked + Label .Icon {
+    Background: #1161ee;
+  }
+  .Login-Form .Group .Check:checked + Label .Icon:before {
+    Transform: Scale(1) Rotate(45deg);
+  }
+  .Login-Form .Group .Check:checked + Label .Icon:after {
+    Transform: Scale(1) Rotate(-45deg);
+  }
+  .Login-Html
+    .Sign-In:checked
+    + .Tab
+    + .Sign-Up
+    + .Tab
+    + .Login-Form
+    .Sign-In-Htm {
+    Transform: Rotate(0);
+  }
+  .Login-Html .Sign-Up:checked + .Tab + .Login-Form .Sign-Up-Htm {
+    Transform: Rotate(0);
+  }
+  
+  .Hr {
+    Height: 2px;
+    Margin: 60px 0 50px 0;
+    Background: rgb(118, 173, 118);
+  }
+  .Foot-Lnk {
+    Text-Align: Center;
+  }
